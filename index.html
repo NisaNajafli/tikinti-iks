@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assests/css/reset.css">
+    <link rel="stylesheet" href="/assests/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assests/css/style.css">
+    <title>Temir</title>
+</head>
+<body>
+    <div class="wrapper">
+            <div id="main-div">
+                <div id="main-button" class="wave">
+                    <svg class="icon-mail" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="28" height="28" x="0" y="0" viewBox="0 0 512.012 512.012"
+                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                        <g>
+                            <path
+                                d="M333.201 115.038c-28.905-59.021-89.37-98.042-157.193-98.042-97.047 0-176 78.505-176 175 0 26.224 5.63 51.359 16.742 74.794L.299 349.055c-2.094 10.472 7.144 19.728 17.618 17.656l83.279-16.465a172.546 172.546 0 0 0 34.732 12.151c-26.717-126.541 69.199-245.321 197.273-247.359z"
+                                fill="#bf8329" opacity="1" data-original="#2e5085" class=""></path>
+                            <path
+                                d="M495.266 394.79a174.485 174.485 0 0 0 7.511-18.514h-.549c37.448-109.917-41.305-225.441-157.567-231.066l-.005-.018c-100.036-4.61-183.148 75.486-183.148 174.804 0 96.414 78.361 174.857 174.743 174.997 26.143-.035 51.201-5.663 74.568-16.747 91.207 18.032 84.094 16.75 86.189 16.75 9.479 0 16.56-8.686 14.709-17.941z"
+                                fill="#bf8329" opacity="1" data-original="#2e5085" class=""></path>
+                        </g>
+                    </svg>
+
+                <svg class="icon-close" 
+                xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" fill="#333" opacity="1" data-original="#2e5085" class=""></path><path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" fill="#333" opacity="1" data-original="#2e5085" class=""></path></g>
+                </svg>
+                
+                </div>
+                <a  href="" id="wrapperdown" class="onlineregistration">
+                    Консультация
+                </a>
+                <a class="wrappericon" id="wrapperwp" href="" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="27" height="27" x="0" y="0" viewBox="0 0 682 682.667"
+                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                        <g>
+                            <path fill-rule="evenodd"
+                                d="M544.387 93.008C484.512 33.063 404.883.035 320.05 0 145.246 0 2.98 142.262 2.91 317.113c-.024 55.895 14.577 110.457 42.331 158.551L.25 640l168.121-44.102c46.324 25.27 98.477 38.586 151.55 38.602h.134c174.785 0 317.066-142.273 317.132-317.133.036-84.742-32.921-164.418-92.8-224.36zM320.05 580.94h-.11c-47.296-.02-93.683-12.73-134.16-36.742l-9.62-5.715-99.766 26.172 26.628-97.27-6.27-9.972c-26.386-41.969-40.32-90.476-40.296-140.281.055-145.332 118.305-263.57 263.7-263.57 70.406.023 136.59 27.476 186.355 77.3s77.156 116.051 77.133 186.485C583.582 462.69 465.34 580.94 320.05 580.94zm144.586-197.418c-7.922-3.968-46.883-23.132-54.149-25.78-7.258-2.645-12.547-3.962-17.824 3.968-5.285 7.93-20.469 25.781-25.094 31.066-4.625 5.29-9.242 5.953-17.168 1.985-7.925-3.965-33.457-12.336-63.726-39.332-23.555-21.012-39.457-46.961-44.082-54.89-4.617-7.938-.04-11.813 3.476-16.173 8.578-10.652 17.168-21.82 19.809-27.105 2.644-5.29 1.32-9.918-.664-13.883-1.977-3.965-17.824-42.969-24.426-58.84-6.437-15.445-12.965-13.36-17.832-13.601-4.617-.231-9.902-.278-15.187-.278-5.282 0-13.868 1.98-21.133 9.918-7.262 7.934-27.73 27.102-27.73 66.106s28.394 76.683 32.355 81.972c3.96 5.29 55.879 85.328 135.367 119.649 18.906 8.172 33.664 13.043 45.176 16.695 18.984 6.031 36.254 5.18 49.91 3.14 15.226-2.277 46.879-19.171 53.488-37.68 6.602-18.51 6.602-34.374 4.617-37.683-1.976-3.304-7.261-5.285-15.183-9.254zm0 0"
+                                fill="#fff
+        " opacity="1" data-original="#105f70
+        " class=""></path>
+                        </g>
+                    </svg>
+                </a>
+                <a class="wrappericon" href="" id="wrappertg" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 512 512" fill="#fff
+        ">
+                        <path d="M256 0C114.62 0 0 114.62 0 256s114.62 256 256 256 256-114.62 
+                    256-256S397.38 0 256 0zm118.66 174.1c-3.85 40.48-20.52 138.71-29 
+                    184.05-3.59 19.19-10.66 25.62-17.5 26.25-14.86 1.37-26.15-9.83-40.55-19.27-22.53-14.77-35.26-23.96-57.13-38.37-25.28-16.66-8.89-25.81 
+                    5.51-40.77 3.77-3.92 69.27-63.5 70.54-68.9.16-.68.31-3.2-1.19-4.53s-3.71-.87-5.3-.51c-2.26.51-38.26 
+                    24.3-107.98 71.37-10.22 7.02-19.47 10.43-27.77 10.26-9.14-.2-26.72-5.17-39.79-9.42-16.03-5.21-28.77-7.97-27.66-16.82.57-4.61 
+                    6.92-9.32 19.04-14.14 74.63-32.52 124.39-53.95 149.29-64.31 
+                    71.099-29.569 85.87-34.71 95.499-34.88 12.062-.213 14.973 9.743 13.991 19.99z" />
+                    </svg>
+                </a>
+                <a class="wrappericon" id="wrapperphone" href="" target="_blank">
+                    <img src="/assests/img/phone.png" alt="">
+                </a>
+            </div>
+        </div>
+
+    <header>
+         <nav class="container">
+            <div class="header_nav">
+               <a href="/" class="">
+               <img class="h_logo" src="/assests/img/logo.webp" alt="R-Finance logo"  loading="eager">
+               </a>
+               <ul class="top_menu">
+                  <li><a href="">Услуги</a></li>
+                  <li><a href="">Преимущества</a></li>
+                  <li><a href="">О компании</a></li>
+                  <li><a href="">Faq</a></li>
+                  <li><a href="">Контакты</a></li>
+               </ul>
+               <div class="top_menu_right">
+                  <div class=" h_social_links h_social_gap">
+                     <div>
+                        <b>Есть вопрос?</b>
+                        <p>Задайте онлайн</p>
+                     </div>
+                     <div>
+                        <a href="https://wa.me/77008369720" target="_blank" aria-label="whatsapp">
+                           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" x="0" y="0" viewBox="0 0 176 176" style="enable-background: new 0 0 512 512" xml:space="preserve" class="">
+                              <g>
+                                 <g data-name="Layer 2">
+                                    <rect width="176" height="176" fill="#29a71a" rx="24" opacity="1" data-original="#29a71a" class=""></rect>
+                                    <g fill="#fff">
+                                       <path d="M126.8 49.2a54.57 54.57 0 0 0-87.42 63.13l-5.79 28.11a2.08 2.08 0 0 0 .33 1.63 2.11 2.11 0 0 0 2.24.87l27.55-6.53A54.56 54.56 0 0 0 126.8 49.2zm-8.59 68.56a42.74 42.74 0 0 1-49.22 8l-3.84-1.9-16.89 4 .05-.21 3.5-17-1.88-3.71a42.72 42.72 0 0 1 7.86-49.59 42.73 42.73 0 0 1 60.42 0 2.28 2.28 0 0 0 .22.22 42.72 42.72 0 0 1-.22 60.19z" fill="#ffffff" opacity="1" data-original="#ffffff"></path>
+                                       <path d="M116.71 105.29c-2.07 3.26-5.34 7.25-9.45 8.24-7.2 1.74-18.25.06-32-12.76l-.17-.15C63 89.41 59.86 80.08 60.62 72.68c.42-4.2 3.92-8 6.87-10.48a3.93 3.93 0 0 1 6.15 1.41l4.45 10a3.91 3.91 0 0 1-.49 4l-2.25 2.92a3.87 3.87 0 0 0-.35 4.32c1.26 2.21 4.28 5.46 7.63 8.47 3.76 3.4 7.93 6.51 10.57 7.57a3.82 3.82 0 0 0 4.19-.88l2.61-2.63a4 4 0 0 1 3.9-1l10.57 3a4 4 0 0 1 2.24 5.91z" fill="#ffffff" opacity="1" data-original="#ffffff"></path>
+                                    </g>
+                                 </g>
+                              </g>
+                           </svg>
+                        </a>
+                        <a href="https://t.me/V_Kabine_adm" target="_balnk" aria-label="telegram">
+                           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" x="0" y="0" viewBox="0 0 176 176" style="enable-background: new 0 0 512 512" xml:space="preserve" class="">
+                              <g>
+                                 <g data-name="Layer 2">
+                                    <rect width="176" height="176" fill="#1c8adb" rx="24" opacity="1" data-original="#1c8adb" class=""></rect>
+                                    <path fill="#ffffff" d="m135.94 45.5-1.82.66-98.78 35.59a3.31 3.31 0 0 0 .29 6.4l25.57 7 4.77 14 4.77 14a4.54 4.54 0 0 0 7.32 1.63l13.21-12.48 25.94 17.59c3.17 2.16 7.69.56 8.5-3l17.18-75.91c.84-3.76-3.12-6.85-6.95-5.48zm-12.61 16.85L78.7 98.83l-2.1 1.72a2.27 2.27 0 0 0-.84 1.48l-.47 3.88-1.29 10.9a.5.5 0 0 1-1 .08L69.37 106l-3.75-11.15a2.26 2.26 0 0 1 1.08-2.67l46.44-26.62 8.74-5c1.27-.74 2.57.87 1.45 1.79z" opacity="1" data-original="#ffffff"></path>
+                                 </g>
+                              </g>
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+                  <a href="tel:+77008369720" class="h_phone">
+                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 482.6 482.6" style="enable-background: new 0 0 512 512" xml:space="preserve" class="">
+                        <g>
+                           <path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7zm-72.6-216.6c1.2-13.3 6.3-24.4 15.9-34l37.2-37.2c5.8-5.6 12.2-8.5 18.4-8.5 6.1 0 12.3 2.9 18 8.7 6.7 6.2 13 12.7 19.8 19.6 3.4 3.5 6.9 7 10.4 10.6l29.8 29.8c6.2 6.2 9.4 12.5 9.4 18.7s-3.2 12.5-9.4 18.7c-3.1 3.1-6.2 6.3-9.3 9.4-9.3 9.4-18 18.3-27.6 26.8l-.5.5c-8.3 8.3-7 16.2-5 22.2.1.3.2.5.3.8 7.7 18.5 18.4 36.1 35.1 57.1 30 37 61.6 65.7 96.4 87.8 4.3 2.8 8.9 5 13.2 7.2 4 2 7.7 3.9 11 6 .4.2.7.4 1.1.6 3.3 1.7 6.5 2.5 9.7 2.5 8 0 13.2-5.1 14.9-6.8l37.4-37.4c5.8-5.8 12.1-8.9 18.3-8.9 7.6 0 13.8 4.7 17.7 8.9l60.3 60.2c12 12 11.9 25-.3 37.7-4.2 4.5-8.6 8.8-13.3 13.3-7 6.8-14.3 13.8-20.9 21.7-11.5 12.4-25.2 18.2-42.9 18.2-1.7 0-3.5-.1-5.2-.2-32.8-2.1-63.3-14.9-86.2-25.8-62.2-30.1-116.8-72.8-162.1-127-37.3-44.9-62.4-86.7-79-131.5-10.3-27.5-14.2-49.6-12.6-69.7z" fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                        </g>
+                     </svg>
+                     8 700 836 97 20
+                  </a>
+               </div>
+               <div id="open_menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                     <g>
+                        <path d="M128 102.4c0-14.138 11.462-25.6 25.6-25.6h332.8c14.138 0 25.6 11.462 25.6 25.6S500.538 128 486.4 128H153.6c-14.138 0-25.6-11.463-25.6-25.6zm358.4 128H25.6C11.462 230.4 0 241.863 0 256c0 14.138 11.462 25.6 25.6 25.6h460.8c14.138 0 25.6-11.462 25.6-25.6 0-14.137-11.462-25.6-25.6-25.6zm0 153.6H256c-14.137 0-25.6 11.462-25.6 25.6 0 14.137 11.463 25.6 25.6 25.6h230.4c14.138 0 25.6-11.463 25.6-25.6 0-14.138-11.462-25.6-25.6-25.6z" fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                     </g>
+                  </svg>
+               </div>
+               <ul id="mobile_menu">
+                  <li><a href="">Lorem</a></li>
+                  <li><a href="">Lorem</a></li>
+                  <li><a href="">Lorem</a></li>
+                  <li><a href="">Lorem</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <main>
+        <section class="hero-slider">
+    <div class="swiper myHeroSwiper">
+        <div class="swiper-wrapper">
+
+            <!-- SLIDE 1 -->
+            <div class="swiper-slide hero-slide">
+                <img src="/assests/img/slider1.webp" class="hero-img" alt="slide">
+
+                <div class="hero-overlay"></div>
+
+                <div class="hero-container container">
+
+                    <!-- LEFT -->
+                    <div class="hero-left">
+                        <span class="hero-tag">Служба строительного контроля</span>
+
+                        <h1 class="hero-title">
+                            Приемка квартир <br> от застройщика
+                        </h1>
+
+                        <p class="hero-subtext">
+                            Подписывая акт приема-передачи, вы снимаете всю ответственность с застройщика
+                            за все нарушения и недостатки, которые могут быть обнаружены при ремонте квартиры.
+                            И принимаете квартиру со всеми имеющимися дефектами.
+                        </p>
+
+                        <div class="hero-btns">
+                            <a href="#" class="btn btn-default">Стоимость услуг</a>
+                            <a href="#" class="btn btn-white btn-default2">Подробнее</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="swiper-slide hero-slide">
+                <img src="/assests/img/slider1.webp" class="hero-img" alt="slide">
+
+                <div class="hero-overlay"></div>
+
+                <div class="hero-container container">
+
+                    <!-- LEFT -->
+                     <div class="hero-left">
+                        <span class="hero-tag">Служба строительного контроля</span>
+
+                        <h1 class="hero-title">
+                            Приемка квартир <br> от застройщика
+                        </h1>
+
+                        <p class="hero-subtext">
+                            Подписывая акт приема-передачи, вы снимаете всю ответственность с застройщика
+                            за все нарушения и недостатки, которые могут быть обнаружены при ремонте квартиры.
+                            И принимаете квартиру со всеми имеющимися дефектами.
+                        </p>
+
+                        <div class="hero-btns">
+                            <a href="#" class="btn btn-default">Стоимость услуг</a>
+                            <a href="#" class="btn btn-white btn-default2">Подробнее</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="swiper-slide hero-slide">
+                <img src="/assests/img/slider1.webp" class="hero-img" alt="slide">
+
+                <div class="hero-overlay"></div>
+
+                <div class="hero-container container">
+
+                    <!-- LEFT -->
+                     <div class="hero-left">
+                        <span class="hero-tag">Служба строительного контроля</span>
+
+                        <h1 class="hero-title">
+                            Приемка квартир <br> от застройщика
+                        </h1>
+
+                        <p class="hero-subtext">
+                            Подписывая акт приема-передачи, вы снимаете всю ответственность с застройщика
+                            за все нарушения и недостатки, которые могут быть обнаружены при ремонте квартиры.
+                            И принимаете квартиру со всеми имеющимися дефектами.
+                        </p>
+
+                        <div class="hero-btns">
+                            <a href="#" class="btn btn-default">Стоимость услуг</a>
+                            <a href="#" class="btn btn-white btn-default2">Подробнее</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+             <!-- SLIDE 4 -->
+            <div class="swiper-slide hero-slide">
+                <img src="/assests/img/slider1.webp" class="hero-img" alt="slide">
+
+                <div class="hero-overlay"></div>
+
+                <div class="hero-container container">
+
+                    <!-- LEFT -->
+                     <div class="hero-left">
+                        <span class="hero-tag">Служба строительного контроля</span>
+
+                        <h1 class="hero-title">
+                            Приемка квартир <br> от застройщика
+                        </h1>
+
+                        <p class="hero-subtext">
+                            Подписывая акт приема-передачи, вы снимаете всю ответственность с застройщика
+                            за все нарушения и недостатки, которые могут быть обнаружены при ремонте квартиры.
+                            И принимаете квартиру со всеми имеющимися дефектами.
+                        </p>
+
+                        <div class="hero-btns">
+                            <a href="#" class="btn btn-default">Стоимость услуг</a>
+                            <a href="#" class="btn btn-white btn-default2">Подробнее</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- NAVIGATION + DOTS -->
+        <div class="hero-nav">
+            <div class="swiper-pagination"></div>
+
+            <div class="hero-arrows">
+                <div class="swiper-button-prev custom-prev"><span></span></div>
+                <div class="swiper-button-next custom-next"><span></span></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="about" class="m-bottom">
+    <div class="container">
+        <div class="about-wrap">
+            <div class="about-info">
+                <div class="about-img aos-init aos-animate">
+                    <div class="about-img-text">
+                        <span>ООО ИК "СК"</span> 
+                        <p class="about-text-description">ООО ИНЖИНИРИНГОВАЯ КОМПАНИЯ</p>
+                    </div>
+                     <div  class="about-video ">
+                        <div class="about-video-preview">
+                            <img src="/assests/img/about.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                 <div class="about-right">
+                    <h2 data-aos="fade-up" class="aos-init aos-animate">
+                        <span>ООО ИК "СК" — ООО ИНЖИНИРИНГОВАЯ КОМПАНИЯ«СТРОИТЕЛЬНЫЙ КОНСАЛТИНГ»</span>
+                         <!-- <span class="block-number">07</span> -->
+                        </h2>
+                         <div data-aos="fade-up" class="about-info-text aos-init aos-animate">СТРОИТЕЛЬНЫЙ КОНТРОЛЬ ОБЪЕКТОВ
+ПРОМЫШЛЕННОГО И ГРАЖДАНСКОГО НАЗНАЧЕНИЯ </div> 
+                         <div data-aos="fade-up" class="about-info-desc aos-init aos-animate"><a href="/">ООО ИК "СК" ,</a>
+                            Независимый строительный контроль ООО ИК "СК" способствует
+успешной реализации проекта в установленные сроки и рамках
+выделенного бюджета, гарантируя соблюдение высоких стандартов
+качества.<br>
+                            Независимый строительный контроль ООО ИК "СК" способствует
+успешной реализации проекта в установленные сроки и рамках
+выделенного бюджета, гарантируя соблюдение высоких стандартов
+качества.
+                        </div>
+                             <div data-aos="fade-up" class="about-info-buttons aos-init aos-animate">
+                                <a href="" class="btn-default">
+                                    <span>О компании</span>
+                                </a> 
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="about-benefits">
+                        <div class="about-benefits-item">
+                            <div data-aos="fade-up" data-aos-delay="0" class="about-benefits-item-wrap aos-init aos-animate">
+                                <div class="about-svgicon">
+                                    <svg
+                                     xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 682.667 682.667" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><defs><clipPath id="a" clipPathUnits="userSpaceOnUse"><path d="M0 512h512V0H0Z" fill="#ffffff" opacity="1" data-original="#000000"></path></clipPath><clipPath id="b" clipPathUnits="userSpaceOnUse"><path d="M0 512h512V0H0Z" fill="#ffffff" opacity="1" data-original="#000000"></path></clipPath></defs><g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 682.667)"><path d="M0 0v54.904h-83.038" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(504.5 96.025)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><path d="m0 0 83.88 2.753v28.415" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(420.62 32.857)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path></g><path d="m0 0-21.71 28.61" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="matrix(1.33333 0 0 -1.33333 383.654 478.786)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><g clip-path="url(#b)" transform="matrix(1.33333 0 0 -1.33333 0 682.667)"><path d="M0 0c10.08 2.28 21.029-1.34 27.67-10.13L66.2-61.1c4.199-5.56 10.86-8.63 17.829-8.39 15.71.53 59.25-2.781 77.681-35.12" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(266.03 244.83)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><path d="m0 0-17.55 9.16C-32.2 16.8-50.3 11.12-57.96-3.54c-7.67-14.66-2-32.74 12.65-40.38l107.98-56.34c1.37-.71 2.77-1.31 4.2-1.8" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(79.62 179.79)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><path d="M0 0c1.688 0 2.967-1.625 2.758-3.45C.061-26.906-29.917-45.391-66.5-45.391c-36.582 0-66.559 18.485-69.256 41.941-.21 1.825 1.069 3.45 2.757 3.45z" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(143.279 279.827)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><path d="m0 0-54.38 173.67" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(134.97 279.83)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><path d="m0 0-56.95-173.67" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(75.53 453.5)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><path d="M0 0c1.688 0 2.968-1.625 2.758-3.45C.061-26.906-29.916-45.391-66.499-45.391c-36.583 0-66.56 18.485-69.257 41.941-.21 1.825 1.069 3.45 2.758 3.45z" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(453.419 279.827)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><path d="m0 0-54.38 173.67" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(445.11 279.83)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><path d="m0 0-56.939-173.67" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(385.67 453.5)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><path d="M0 0h150.58c9.38 0 16.981-7.6 16.981-16.979v-.041c0-9.38-7.601-16.98-16.981-16.98H0" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(265.47 487.5)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><path d="M0 0h77.282" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(129.308 487.5)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><path d="M0 0h-150.58c-9.38 0-16.98 7.6-16.98 16.98v.041c0 9.379 7.6 16.979 16.98 16.979h39.452" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(206.59 453.5)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><path d="M0 0c6.8 6.091 15.79 9.801 25.63 9.801h100.58c15.02 0 28.02-8.62 34.331-21.181" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(160.11 143.14)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><path d="M0 0h.561v-300.56H-59.44V0h.56" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(265.47 453.5)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><path d="M0 0c0-18.777-15.222-34-34-34-18.777 0-34 15.223-34 34s15.223 34 34 34C-15.222 34 0 18.777 0 0Z" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(270.026 470.5)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><path d="m0 0 23.071-18.103a29.986 29.986 0 0 1 22.88-6.071L215.837.863l21.085.692" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(204.783 31.994)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><path d="M0 0c0 48.48-37.44 77.47-88.412 73.532-50.972-3.938-124.83-54.124-124.83-54.124l-117.676 92.331c-13.011 10.208-31.843 7.949-42.064-5.044-10.221-12.994-7.96-31.803 5.05-42.011l101.661-79.766" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(445.884 66.824)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path></g></g>
+                                    </svg>
+                                </div>
+                                <div class="about-benefits-item-text"><p>Опытные юристы с десятилетней практикой
+                        </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-benefits-item">
+                        <div data-aos="fade-up" data-aos-delay="100" class="about-benefits-item-wrap aos-init aos-animate">
+                            <div class="about-svgicon">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 48 48" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M24 10c-7.72 0-14 6.28-14 14s6.28 14 14 14 14-6.28 14-14-6.28-14-14-14zm0 26c-6.617 0-12-5.383-12-12s5.383-12 12-12 12 5.383 12 12-5.383 12-12 12z" fill="#ffffff" opacity="1" data-original="#000000" class=""></path><path d="M29.293 19.293 22 26.586l-3.294-3.293a.999.999 0 1 0-1.414 1.414l4.001 4a1 1 0 0 0 1.414 0l8-8a.999.999 0 1 0-1.414-1.414z" fill="#ffffff" opacity="1" data-original="#000000" class=""></path><path d="M43.87 20.747c-.412-.305-.54-.908-.267-1.342.977-1.554 2.396-4.818-2.49-6.015-.498-.122-.867-.637-.761-1.137.469-2.194-.188-5.38-4.604-4.604-.503.088-1.038-.258-1.137-.761-.331-1.682-1.757-5.089-6.014-2.491-.438.267-1.136.122-1.342-.268-.661-1.249-3.556-4.129-6.51 0-.298.417-.983.524-1.342.267-1.938-1.388-5.069-1.735-6.015 2.49-.109.485-.625.857-1.138.76-1.694-.322-5.412-.216-4.601 4.604.085.505-.254 1.062-.76 1.138-1.973.295-5.015 1.88-2.492 6.014.267.437.19 1.111-.267 1.342-1.751.885-3.756 4.033 0 6.513.427.282.534.889.267 1.326-2.523 4.134.519 5.718 2.492 6.014.507.076.845.633.76 1.138-.811 4.82 2.907 4.926 4.603 4.603.513-.098 1.029.275 1.138.76.946 4.226 4.077 3.878 6.015 2.49.359-.257 1.044-.15 1.342.267 2.954 4.13 5.849 1.25 6.51 0 .206-.389.904-.535 1.342-.268 4.257 2.598 5.683-.809 6.014-2.491.099-.503.634-.849 1.137-.761 4.416.776 5.072-2.41 4.604-4.604-.107-.5.263-1.015.761-1.137 4.887-1.197 3.468-4.461 2.49-6.015-.273-.434-.155-1.05.265-1.34 1.306-.903 4.13-3.436 0-6.492zm-1.428 9.964c.34.547.13 1.299-.644 1.554-1.418.468-4.031.853-3.334 4.992.133.787-.288 1.258-1.19 1.189-1.372-.105-4.197-.66-4.99 3.335-.157.789-.93.96-1.554.645-2.692-1.359-3.769-1.533-5.887 1.171-.405.517-1.249.495-1.683 0-1.138-1.297-2.427-3.291-5.888-1.17-.602.369-1.288.084-1.554-.644-.691-1.896-.895-3.917-4.991-3.334-.632.09-1.302-.338-1.189-1.189.215-1.628.462-4.242-3.336-4.992-.586-.116-1.044-.898-.644-1.554 1.517-2.481 1.307-4.033-1.193-5.898-.282-.21-.741-1.113.022-1.659 2.435-1.742 2.688-3.405 1.171-5.887-.401-.656.058-1.439.644-1.554 3.798-.75 3.551-3.364 3.336-4.992-.113-.851.558-1.279 1.189-1.189 4.096.582 4.3-1.438 4.991-3.334.265-.729.952-1.013 1.554-.644 3.462 2.121 4.751.127 5.888-1.17.434-.495 1.277-.517 1.683 0 2.118 2.704 3.195 2.53 5.887 1.171.624-.315 1.397-.144 1.554.645.793 3.995 3.618 3.44 4.99 3.335.903-.069 1.323.402 1.19 1.189-.697 4.14 1.916 4.524 3.334 4.992.774.255.984 1.008.644 1.554-2.224 3.572.126 4.992 1.171 5.888.408.35.643 1.177.094 1.605-1.249.864-3.489 2.373-1.265 5.945z" fill="#ffffff" opacity="1" data-original="#000000" class=""></path></g></svg>
+                            </div>
+                             <div class="about-benefits-item-text"><p>Гарантируем результат и защиту ваших интересов</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-benefits-item">
+                        <div data-aos="fade-up" data-aos-delay="200" class="about-benefits-item-wrap aos-init aos-animate">
+                            <div class="about-svgicon">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 682.667 682.667" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><defs><clipPath id="a" clipPathUnits="userSpaceOnUse"><path d="M0 512h512V0H0Z" fill="#ffffff" opacity="1" data-original="#000000" class=""></path></clipPath></defs><g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 682.667)"><path d="M0 0v-111.908c0-31.564 25.586-57.16 57.15-57.16h129.881" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(70.353 255.88)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path><path d="M0 0v20.043c0 31.564 25.586 57.15 57.15 57.15h14.924" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(70.353 381.582)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path><path d="M0 0v-211.05c0-19.57-9.84-36.84-24.83-47.14" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(400.84 355.02)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path><path d="M0 0h14.93c31.56 0 57.15-25.59 57.15-57.16v-16.62" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(328.76 458.78)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path><path d="M0 0c-7.669 19.321-26.517 32.99-48.569 32.99-22.052 0-40.899-13.669-48.568-32.99h-18.405c-19.747 0-35.754-16.008-35.754-35.755 0-19.746 16.007-35.755 35.754-35.755H18.404c19.747 0 35.755 16.009 35.755 35.755C54.159-16.008 38.151 0 18.404 0Z" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(284.161 470.196)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path><path d="M0 0c0 11.807-9.571 21.379-21.378 21.379-11.808 0-21.379-9.572-21.379-21.379 0-11.807 9.571-21.378 21.379-21.378C-9.571-21.378 0-11.807 0 0Z" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(256.97 450.937)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path><path d="M0 0h13.989v-65.449" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(58.31 351.14)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path><path d="M0 0c0 34.712-28.14 62.852-62.853 62.852-34.712 0-62.852-28.14-62.852-62.852 0-34.712 28.14-62.853 62.852-62.853C-28.14-62.853 0-34.712 0 0Z" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(133.205 318.732)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path><path d="M0 0s-31.844-.4-33.352.103c-1.508.502 2.418 3.158 23.296 32.988 3.899 5.571 6.045 10.271 6.958 14.209l.324 2.531c0 9.25-7.498 16.748-16.747 16.748-8.139 0-14.921-5.806-16.433-13.502" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(212.352 161.986)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path><path d="M0 0a62.594 62.594 0 0 1 38.9-13.48c34.72 0 62.86 28.14 62.86 62.85s-28.14 62.85-62.86 62.85c-34.71 0-62.85-28.14-62.85-62.85 0-9.39 2.06-18.29 5.75-26.29" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(155.47 145.83)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path><path d="M0 0c1.511 7.695 8.294 13.501 16.433 13.501 9.249 0 16.747-7.498 16.747-16.747 0-9.249-7.498-16.747-16.747-16.747 9.249 0 16.747-7.498 16.747-16.747 0-9.25-7.498-16.747-16.747-16.747-8.457 0-15.45 6.267-16.586 14.411a16.971 16.971 0 0 0-.161 2.336" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(302.347 90.707)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path><path d="M0 0c0 34.712-28.14 62.852-62.852 62.852-34.712 0-62.852-28.14-62.852-62.852 0-34.712 28.14-62.853 62.852-62.853C-28.14-62.853 0-34.712 0 0Z" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(381.25 71.667)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path><path d="M0 0h116.568" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(176.398 337.688)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path><path d="M0 0h77.784" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(176.398 299.776)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path><path d="M0 0h93.558" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(279.964 214.155)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path><path d="M0 0h54.774" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(279.964 176.244)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path><path d="M0 0h87.773" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(416.727 90.623)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path><path d="M0 0h48.99" style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(416.727 52.71)" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class="hovered-path"></path></g></g></svg>
+                            </div>
+                            <div class="about-benefits-item-text"><p>Сопровождаем клиента на каждом этапе дела</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-benefits-item">
+                        <div data-aos="fade-up" data-aos-delay="300" class="about-benefits-item-wrap aos-init aos-animate">
+                            <div class="about-svgicon">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 16.933 16.933" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M3.175.264c-.873 0-1.587.714-1.587 1.588v14.551a.265.265 0 0 0 .4.227l1.187-.713 1.188.713a.265.265 0 0 0 .272 0l1.187-.713 1.186.713a.265.265 0 0 0 .273 0l1.185-.713 1.188.713a.265.265 0 0 0 .271 0l.936-.56c.42.371.971.597 1.574.597 1.312 0 2.38-1.069 2.38-2.38a2.385 2.385 0 0 0-2.114-2.366V9.408l1.059-.632 1.185.71a.265.265 0 0 0 .4-.226V1.852A1.59 1.59 0 0 0 13.76.264zm0 .53h9.403a1.58 1.58 0 0 0-.406 1.058V11.92a2.385 2.385 0 0 0-2.118 2.366c0 .515.165.993.444 1.383l-.707.426-1.188-.713a.265.265 0 0 0-.271 0l-1.188.713-1.188-.713a.265.265 0 0 0-.27 0l-1.188.713-1.186-.713a.265.265 0 0 0-.273 0l-.922.553V1.852c0-.588.47-1.058 1.058-1.058zm10.585 0c.587 0 1.056.47 1.056 1.058v6.94l-.922-.554a.265.265 0 0 0-.271 0l-.922.555V1.852c0-.588.471-1.058 1.059-1.058zM7.25 3.715a2.915 2.915 0 0 0-2.913 2.91c0 1.604 1.308 2.91 2.912 2.91s2.91-1.306 2.91-2.91a2.914 2.914 0 0 0-2.91-2.91zm0 .53a2.377 2.377 0 0 1 2.38 2.38c0 1.318-1.062 2.381-2.38 2.381S4.866 7.943 4.866 6.625a2.378 2.378 0 0 1 2.382-2.38zm0 .462a.265.265 0 0 0-.266.264v.211a.837.837 0 0 0-.59.853.838.838 0 0 0 .262.561c.164.154.351.218.498.271.144.053.258.1.32.158a.329.329 0 0 1 .1.223.265.265 0 0 0 0 .002.328.328 0 0 1-.09.227.332.332 0 0 1-.226.094.33.33 0 0 1-.225-.096.265.265 0 0 0-.375-.008.265.265 0 0 0-.006.375c.093.097.207.17.331.212v.223a.265.265 0 0 0 .266.266.265.265 0 0 0 .264-.266v-.216a.84.84 0 0 0 .59-.825.841.841 0 0 0-.27-.6c-.165-.152-.352-.214-.498-.267-.144-.052-.255-.1-.316-.158a.329.329 0 0 1-.098-.207v-.002a.33.33 0 0 1 .072-.217.324.324 0 0 1 .201-.109.326.326 0 0 1 .221.06.265.265 0 0 0 .371-.056.265.265 0 0 0-.054-.369.845.845 0 0 0-.219-.117v-.223a.265.265 0 0 0-.264-.264zm-3.412 5.865a.265.265 0 0 0-.266.264.265.265 0 0 0 .266.265h3.439a.265.265 0 0 0 .264-.265.265.265 0 0 0-.264-.264zm0 1.058a.265.265 0 0 0-.266.265.265.265 0 0 0 .266.265h6.613a.265.265 0 0 0 .265-.265.265.265 0 0 0-.265-.265zm8.597.805c1.026 0 1.854.826 1.854 1.851s-.828 1.852-1.854 1.852c-.523 0-.993-.215-1.33-.56a.265.265 0 0 0-.05-.056 1.846 1.846 0 0 1-.471-1.236c0-1.025.825-1.851 1.851-1.851zm-8.597.254a.265.265 0 0 0-.266.264.265.265 0 0 0 .266.265h5.025a.265.265 0 0 0 .265-.265.265.265 0 0 0-.265-.264zm9.432.86a.265.265 0 0 0-.161.06l-.975.8-.365-.322a.265.265 0 0 0-.373.022.265.265 0 0 0 .022.373l.533.475a.265.265 0 0 0 .344.005l1.15-.943a.265.265 0 0 0 .037-.373.265.265 0 0 0-.178-.095.265.265 0 0 0-.034-.002z" fill="#ffffff" opacity="1" data-original="#000000" class=""></path></g></svg>
+                            </div>
+                            <div class="about-benefits-item-text"><p>Оплата только после достижения результата</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <section class="services_section" aria-label="Список юридических услуг">
+    <div id="bxdynamic_jmonnO_start" style="display:none"></div>
+
+    <div class="container">
+        <div class="section-top">
+            <div class="section-title">УСЛУГИ ОТДЕЛА СТРОИТЕЛЬНОГО КОНТРОЛЯ И</div>
+
+            <!-- <div class="only-desktop">
+                <a href="/services.html" class="button">
+                    <span class="text">Все услуги</span>
+                </a>
+            </div> -->
+        </div>
+
+        <div class="services_section-grid">
+
+            <div class="main-page__card">
+                <a class="press-card" href="/" title="Банкротство" aria-label="Банкротство">
+                    <div class="press-card__hover bg1">
+                    </div>
+
+                    <div class="press-card__content">
+                        <div class="press-card__top">
+                            <div class="press-card__container">
+                                <div class="press-card__title">Строительный контроль
+объектов промышленного и
+гражданского назначения
+</div>
+                                <!-- <div class="press-card_desc">
+                                    Банкротство — законный инструмент, который позволяет полностью остановить давление банков и коллекторов. Это эффективный способ защитить имущество и восстановить финансовую стабильность. Мы тщательно анализируем вашу ситуацию и выбираем оптимальный путь решения проблемы.
+                                    Полная версия: Мы сопровождаем процедуру на всех этапах, готовим необходимые документы и представляем ваши интересы в суде. Добиваемся списания долгов, снятия ограничений и полного финансового восстановления. Наши юристы работают быстро, конфиденциально и добросовестно. Каждое дело ведётся индивидуально с максимальной ответственностью и вниманием к деталям.
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="press-card__bot">
+                            <div class="press-card__wrapper">
+                                <div class="press-card__date">
+                                    <div class="press-card__text">Консультация</div>
+                                </div>
+                                <!-- <div class="press-card__icon">
+                                    <svg class="press-card__svg" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+                                    </svg>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="main-page__card">
+                <a class="press-card" href="/" title="Реструктуризация долга" aria-label="Реструктуризация долга">
+                    <div class="press-card__hover bg2">
+                        
+                    </div>
+
+                    <div class="press-card__content">
+                        <div class="press-card__top">
+                            <div class="press-card__container">
+                                <div class="press-card__title">Геодезическое сопровождение
+строительства</div>
+                                <!-- <div class="press-card_desc">
+                                    Реструктуризация долга позволяет снизить ежемесячную нагрузку и стабилизировать финансовую ситуацию. Это решение подходит тем, кто хочет сохранить имущество и избежать процедуры банкротства. Мы подбираем лучшие условия и ведём переговоры с кредитными организациями.
+                                    Полная версия: Мы добиваемся пересмотра процентной ставки, продления сроков выплат и перераспределения задолженности. Наша команда учитывает все нюансы договора и защищает интересы клиента на каждом этапе. Благодаря грамотной стратегии вы получаете реальный шанс выйти из долговой нагрузки. Работаем прозрачно, юридически корректно и строго в рамках закона.
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="press-card__bot">
+                            <div class="press-card__wrapper">
+                                <div class="press-card__date">
+                                    <div class="press-card__text">Консультация</div>
+                                </div>
+                                <!-- <div class="press-card__icon">
+                                    <svg class="press-card__svg" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+                                    </svg>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="main-page__card">
+                <a class="press-card" href="/" title="Защита прав потребителей" aria-label="Защита прав потребителей">
+                    <div class="press-card__hover bg3">
+
+                    </div>
+
+                    <div class="press-card__content">
+                        <div class="press-card__top">
+                            <div class="press-card__container">
+                                <div class="press-card__title">Документальное
+сопровождение строительства.
+Формирование и
+восстановление
+исполнительной технической
+документации
+</div>
+                                <!-- <div class="press-card_desc">
+                                    Защита прав потребителей необходима, когда компании нарушают ваши законные интересы. Мы помогаем вернуть деньги, добиться компенсации и привлечь нарушителя к ответственности. Работаем с магазинами, банками, сервисами и онлайн-площадками.
+                                    Полная версия: Наши юристы готовят претензии, исковые заявления и представляют ваши интересы в суде. Мы анализируем ситуацию, собираем доказательства и добиваемся справедливого решения. Практика показывает — большинство споров успешно разрешаются в пользу клиента. Мы обеспечиваем оперативность, юридическую точность и полное сопровождение вашего дела от начала до результата.
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="press-card__bot">
+                            <div class="press-card__wrapper">
+                                <div class="press-card__date">
+                                    <div class="press-card__text">Консультация</div>
+                                </div>
+                                <!-- <div class="press-card__icon">
+                                    <svg class="press-card__svg" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+                                    </svg>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="main-page__card">
+                <a class="press-card" href="/" title="Все юридические услуги" aria-label="Все юридические услуги">
+                    <div class="press-card__hover bg4">
+                    </div>
+
+                    <div class="press-card__content">
+                        <div class="press-card__top">
+                            <div class="press-card__container">
+                                <div class="press-card__title"> Входной контроль качества
+МТР (ТМЦ)</div>
+                                <!-- <div class="press-card_desc">
+                                    Мы оказываем комплекс юридических услуг для частных лиц и бизнеса. Консультируем, готовим документы и сопровождаем клиентов в сложных ситуациях. Каждое обращение рассматривается индивидуально.
+                                    Полная версия: Оказываем поддержку в судебных процессах, переговорах, подготовке договоров и правовой экспертизе. Юристы нашей компании обладают большим опытом и глубокими знаниями законодательства. Мы решаем задачи различной сложности — от бытовых вопросов до серьёзных судебных споров. Гарантируем конфиденциальность, точность и профессиональный подход на каждом этапе взаимодействия.
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="press-card__bot">
+                            <div class="press-card__wrapper">
+                                <div class="press-card__date">
+                                    <div class="press-card__text">Консультация</div>
+                                </div>
+                                <!-- <div class="press-card__icon">
+                                    <svg class="press-card__svg" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+                                    </svg>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="main-page__card">
+                <a class="press-card" href="/" title="Банкротство" aria-label="Банкротство">
+                    <div class="press-card__hover bg5">
+                    </div>
+
+                    <div class="press-card__content">
+                        <div class="press-card__top">
+                            <div class="press-card__container">
+                                <div class="press-card__title">Маркшейдерская съемка и
+геодезический мониторинг
+зданий и сооружений
+</div>
+                                <!-- <div class="press-card_desc">
+                                    Банкротство — законный инструмент, который позволяет полностью остановить давление банков и коллекторов. Это эффективный способ защитить имущество и восстановить финансовую стабильность. Мы тщательно анализируем вашу ситуацию и выбираем оптимальный путь решения проблемы.
+                                    Полная версия: Мы сопровождаем процедуру на всех этапах, готовим необходимые документы и представляем ваши интересы в суде. Добиваемся списания долгов, снятия ограничений и полного финансового восстановления. Наши юристы работают быстро, конфиденциально и добросовестно. Каждое дело ведётся индивидуально с максимальной ответственностью и вниманием к деталям.
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="press-card__bot">
+                            <div class="press-card__wrapper">
+                                <div class="press-card__date">
+                                    <div class="press-card__text">Консультация</div>
+                                </div>
+                                <!-- <div class="press-card__icon">
+                                    <svg class="press-card__svg" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+                                    </svg>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="bxdynamic_jmonnO_end" style="display:none"></div>
+</section>
+<section class="info">
+    <div class="container">
+        <div class="info-texts">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>
+                Геодезическое сопровождение строительства
+предполагает создание на строительной площадке
+специализированного подразделения, которое
+оказывает услуги заказчику в соответствии с условиями
+проекта и поставленными задачами. Данное
+подразделение оснащается современным
+геодезическим оборудованием, компьютерами с
+необходимым программным обеспечением и
+печатающими устройствами.
+            </p>
+            <p>
+                <span><b>ООО ИК "СК"</b></span> может сформировать геодезическое
+подразделение от одного специалиста до нескольких
+квалифицированных бригад. В тесном сотрудничестве
+с заказчиком разрабатывается график работ,
+определяются цели и задачи, направленные на
+обеспечение соблюдения графика проведения
+строительно-монтажных работ
+            </p>
+        </div>
+        <img src="https://avatars.mds.yandex.net/i?id=c89b8c793716c2115895644d929735111224647c-10507661-images-thumbs&n=13" alt="">
+    </div>
+</section>
+
+<section class="advantages">
+    <div class="container">
+        <h2 class="section-title">ПОЧЕМУ ООО ИК «СТРОИТЕЛЬНЫЙ КОНСАЛТИНГ» ?</h2>
+        <div class="advantages-cards">
+            <div class="card">
+                <div class="card-img">
+                        <img src="https://nbuilder.ru/wp-content/uploads/954-1.jpg" alt="">
+                    </div>
+                <h3 class="card-title">
+                    Профессиональный опыт и репутация
+                </h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa architecto aliquid at corrupti veniam qui, accusantium voluptates impedit commodi nostrum.
+                </p>
+                <a class="btn btn-default-yellow" href="">подробнее</a>
+                </div>
+             <div class="card">
+                <div class="card-img">
+                        <img src="https://avatars.mds.yandex.net/i?id=5ddaad8ff53fa8b9f4e9f372c519ce87b0d2564e-16479369-images-thumbs&n=13" alt="">
+                    </div>
+                <h3 class="card-title">
+                    Индивидуальный
+подход
+                </h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa architecto aliquid at corrupti veniam qui, accusantium voluptates impedit commodi nostrum.
+                </p>
+                <a class="btn btn-default-yellow" href="">подробнее</a>
+                </div>
+                 <div class="card">
+                <div class="card-img">
+                        <img src="https://avatars.mds.yandex.net/i?id=bf0eb60b097d19342913383091e39c92d14ff4b7-10810377-images-thumbs&n=13" alt="">
+                    </div>
+                <h3 class="card-title">
+                   Современные
+технологии
+                </h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa architecto aliquid at corrupti veniam qui, accusantium voluptates impedit commodi nostrum.
+                </p>
+                <a class="btn btn-default-yellow" href="">подробнее</a>
+                </div>
+                 <div class="card">
+                <div class="card-img">
+                        <img src="https://avatars.mds.yandex.net/i?id=a584b207257ffe68adf2972348a98f4328c9209f-5333707-images-thumbs&n=13" alt="">
+                    </div>
+                <h3 class="card-title">
+                    Комплексные услуги 
+                </h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa architecto aliquid at corrupti veniam qui, accusantium voluptates impedit commodi nostrum.
+                </p>
+                <a class="btn btn-default-yellow" href="">подробнее</a>
+                </div>
+                 <div class="card">
+                <div class="card-img">
+                        <img src="https://avatars.mds.yandex.net/i?id=8c119edc9545438e1b12426616a105fc4d6473e4-4451190-images-thumbs&n=13" alt="">
+                    </div>
+                <h3 class="card-title">
+                    Надежность и
+ответственность
+                </h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa architecto aliquid at corrupti veniam qui, accusantium voluptates impedit commodi nostrum.
+                </p>
+                <a class="btn btn-default-yellow" href="">подробнее</a>
+                </div>
+                 <div class="card">
+                <div class="card-img">
+                        <img src="https://avatars.mds.yandex.net/i?id=a030a71b50c2ecb6ed20ec7fd79bba7d4759351e-10147999-images-thumbs&n=13" alt="">
+                    </div>
+                <h3 class="card-title">
+                   Lorem ipsum dolor sit.
+                </h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa architecto aliquid at corrupti veniam qui, accusantium voluptates impedit commodi nostrum.
+                </p>
+                <a class="btn btn-default-yellow" href="">подробнее</a>
+                </div>
+        </div>
+    </div>
+</section>
+<section id="faq" class="resources m80 pb80">
+            <div class="container">
+               <h2 class="sec_title">
+                  Часто задаваемые вопросы
+               </h2>
+               <div class="flex pt-4">
+                  <div class="f33">
+                     <div class="resources-desc">
+                        <picture>
+                           <source srcset="/assests/img/logowithoutbg.webp" type="image/webp">
+                           <img height="150px" class="faq-logo" src="/assests/img/logowithoutbg.webp" alt="logo" >
+                        </picture>
+                        <div class="desc fb">
+                           <p>
+                              Если не нашли нужную информацию — свяжитесь с нами, и мы подробно проконсультируем вас.
+                           </p>
+                        </div>
+                        <a class="btn btn-default-yellow">Оставить заявку</a>
+                     </div>
+                  </div>
+                  <div class="f66">
+                     <div class="resources-items">
+                        <div class="resources-item-wrapper">
+                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Оставляете ли вы автомобиль у себя или можно продолжать ездить?</a>
+                           <div class="description faq-hidden">Автомобиль остаётся у вас — вы продолжаете пользоваться им как обычно.</div>
+                        </div>
+                        <div class="resources-item-wrapper">
+                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Какие документы нужны для оформления займа?</a>
+                           <div class="description faq-hidden">Паспорт и ПТС. По желанию — СТС. Больше ничего не требуется.</div>
+                        </div>
+                        <div class="resources-item-wrapper">
+                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Как быстро я получу деньги?</a>
+                           <div class="description faq-hidden">Одобрение за 10–15 минут. Деньги выдаём в день подачи заявки.</div>
+                        </div>
+                        <div class="resources-item-wrapper">
+                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Какую сумму можно получить под залог авто?</a>
+                           <div class="description faq-hidden">До 90% от рыночной стоимости автомобиля, в зависимости от марки и технического состояния.</div>
+                        </div>
+                        <div class="resources-item-wrapper">
+                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Какие у вас процентные ставки?</a>
+                           <div class="description faq-hidden">Ставка фиксированная и прописана в договоре. Никаких скрытых платежей или комиссий.</div>
+                        </div>
+                        <div class="resources-item-wrapper">
+                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Можно ли погашать кредит досрочно?</a>
+                           <div class="description faq-hidden">Да, в любое время и без дополнительных штрафов.</div>
+                        </div>
+                        <div class="resources-item-wrapper">
+                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Работаете ли вы с автомобилями, которые ещё находятся в кредите?</a>
+                           <div class="description faq-hidden">Да, возможно оформление и с кредитными автомобилями — условия обсуждаются индивидуально.</div>
+                        </div>
+                        <div class="resources-item-wrapper">
+                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Проверяете ли вы кредитную историю клиента?</a>
+                           <div class="description faq-hidden">Нет, кредитная история не влияет на одобрение.</div>
+                        </div>
+                        <div class="resources-item-wrapper">
+                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Что происходит, если я задержу платеж?</a>
+                           <div class="description faq-hidden">Вы заранее получаете напоминания. Условия просрочки прозрачны и указаны в договоре.</div>
+                        </div>
+                        <div class="resources-item-wrapper">
+                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Можно ли оформить сделку дистанционно?</a>
+                           <div class="description faq-hidden">Да, предварительную оценку и консультацию проводим по телефону или онлайн.</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="info2">
+            <div class="container">
+                <img src="https://mirastroy.ru/upload/resize_cache/webp/iblock/6e0/k2oiacdajp08cwkhl9t6fdr655mt9f0a.webp" alt="">
+                <div class="info-texts">
+                    <h2>ГЕОДЕЗИЧЕСКОЕ СОПРОВОЖДЕНИЕ СТРОИТЕЛЬСТВА</h2>
+                    <p>
+                        Геодезическое сопровождение строительства
+предполагает создание на строительной площадке
+специализированного подразделения, которое
+оказывает услуги заказчику в соответствии с условиями
+проекта и поставленными задачами. Данное
+подразделение оснащается современным
+геодезическим оборудованием, компьютерами с
+необходимым программным обеспечением и
+печатающими устройствами. 
+                    </p>
+                    <p>
+                        <span>ООО ИК "СК"</span> может сформировать геодезическое
+подразделение от одного специалиста до нескольких
+квалифицированных бригад. В тесном сотрудничестве
+с заказчиком разрабатывается график работ,
+определяются цели и задачи, направленные на
+обеспечение соблюдения графика проведения
+строительно-монтажных работ.
+                    </p>
+                </div>
+            </div>
+         </section>
+         <section id="contact_sec">
+            <div class="container">
+               <div id="formWrapper">
+                  <div class="formWrapperLeft">
+                     <h2>КОНТАКТЫ</h2>
+                     <p>Свяжитесь с нами, и мы предоставим всю необходимую информацию.</p>
+                     <div class="d-flex multipleWrap">
+                        <div>
+                           <p class="formLTitle">Позвоните нам</p>
+                           <a href="tel:+77008369720">
+                              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 513.64 513.64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                 <g>
+                                    <path d="m499.66 376.96-71.68-71.68c-25.6-25.6-69.12-15.359-79.36 17.92-7.68 23.041-33.28 35.841-56.32 30.72-51.2-12.8-120.32-79.36-133.12-133.12-7.68-23.041 7.68-48.641 30.72-56.32 33.28-10.24 43.52-53.76 17.92-79.36l-71.68-71.68c-20.48-17.92-51.2-17.92-69.12 0L18.38 62.08c-48.64 51.2 5.12 186.88 125.44 307.2s256 176.641 307.2 125.44l48.64-48.64c17.921-20.48 17.921-51.2 0-69.12z" fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                 </g>
+                              </svg>
+                              8 700 836 97 20
+                           </a>
+                        </div>
+                        <div>
+                           <p class="formLTitle">E-mail</p>
+                           <a href="mailto:office@r-finance.kz" target="_blank">office@r-finance.kz</a>
+                        </div>
+                     </div>
+                     <p class="formLTitle">Связаться в WhatsApp</p>
+                     <a href="https://wa.me/77008369720" target="_blank">+7 700 836 97 20</a>
+                     <p class="text-b fw-23 mt-4">Наши специалисты готовы проконсультировать вас в любое время.</p>
+                  </div>
+                  <div class="formWrapperRight">
+                     <h3>
+                        <p>Отправить заявку</p>
+                     </h3>
+                     <p class="mt-4">Отправьте заявку и мы проинформируем вас о начале участия</p>
+                     <form action="" id="callFormWrapper">
+                        <div>
+                           <input type="text" placeholder="Имя*"   required="" style="width: 100%;" >
+                           <input type="tel" placeholder="Телефон*" required="">
+                           <input type="email" placeholder="E-mail*" required="">
+                           <textarea name="" placeholder="Сообщение" id="" rows="4"></textarea>
+                           <button class="btn btn-default-yellow">Оставить заявку</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__main ">
+      <div class="footer__content">
+       <div class="footer__text">
+          ООО «Lorem» <br>
+            г. Москва, ул. Василисы Кожиной, д. 1, <br>
+            секция 2, этаж 4 <br>
+            Бизнес Центр «Парк Победы»        </div>
+        <div class="footer__contacts">
+          <div class="footer__phone">
+            <a href="" title="Телефон компании" rel="nofollow">+7 (xxx) xxx-xx-xx</a>          </div>
+          <div class="footer__email">
+            <a href="" rel="nofollow" title="">info@aqros.ru</a>          </div>
+        </div>
+      </div>
+      <div class="footer__nav">
+    <div class="footer-nav__group">
+    <a href="" class="footer-nav__title" title="">Компания</a>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+        <a class="footer-nav__link" href="/about" title="">О компании</a>
+      </li>
+          <li class="footer-nav__item">
+        <a class="footer-nav__link" href="/team" title="">Наша команда </a>
+      </li>
+          <li class="footer-nav__item">
+        <a class="footer-nav__link" href="/services" title="">Услуги </a>
+      </li>
+          <li class="footer-nav__item">
+        <a class="footer-nav__link" href="/contact" title="">Контакты</a>
+      </li>
+        </ul>
+      </div>
+	  <div class="footer-nav__group">
+    <a href="" class="footer-nav__title" title="">Навигация</a>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+        <a class="footer-nav__link" href="/reviews" title="">Отзывы клиентов</a>
+      </li>
+          <li class="footer-nav__item">
+        <a class="footer-nav__link" href="/cases" title="">Примеры дел</a>
+      </li>
+          <li class="footer-nav__item">
+        <a class="footer-nav__link" href="/events" title="">Мероприятия</a>
+      </li>
+          <li class="footer-nav__item">
+        <a class="footer-nav__link" href="/blogs" title="">Блоги</a>
+      </li>
+        </ul>
+      </div>
+	</div>    </div>
+    <div class="footer__other">
+      <div class="footer__copy">
+        Copyright ©  <id id="year">2025</id>     </div>
+      <div class="footer__dev">
+         <span>Разработка сайта и<br>техническая поддержка — 
+          <a target="_blank" href="https://jeywastudio.com/">JEYWA STUDIO</a>
+        </span>
+              </div>
+    </div>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="/assests/swiper-bundle.min.js"></script>
+    <script src="/assests/main.js"></script>
+    <!--Fixed Icons Script-->
+    <script>
+      const mainButton = document.getElementById('main-button');
+      mainButton.addEventListener('click', function () {
+      this.classList.toggle('open');
+      });
+    </script>
+    <!--Hero Slider Script-->
+    <script>
+      const heroSwiper = new Swiper(".myHeroSwiper", {
+    loop: true,
+    speed: 600,
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    // autoplay: {
+    //     delay: 4000,   
+    //     disableOnInteraction: false, 
+    // },
+
+    navigation: {
+        nextEl: ".custom-next",
+        prevEl: ".custom-prev",
+    },
+});
+    </script>
+    <!--Faq Script-->
+    <script>
+        document.querySelectorAll(".resources-item-wrapper").forEach(wrapper => {
+    wrapper.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        const desc = this.querySelector(".description");
+        const link = this.querySelector(".link");
+        desc.classList.toggle("faq-hidden");
+
+        link.classList.toggle("open");
+    });
+});
+
+    </script>
+</body>
+</html>
