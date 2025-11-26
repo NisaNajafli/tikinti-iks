@@ -6,6 +6,9 @@
     --grey: #a7aaab;
     --green: #3f6167
 }
+*{
+    font-family: "Montserrat", sans-serif !important; 
+}
 a{
     color: #333;
     text-decoration: none;
@@ -1411,9 +1414,6 @@ header {
     background-color: var(--green);
     padding: 80px 0;
 }
-.info2{
-    margin-bottom: 0;
-}
 .info .container , .info2 .container{
     display: flex;
     flex-direction: row;
@@ -1645,18 +1645,32 @@ h2 {
     display: block;
     margin-bottom: 1rem;
     padding: 1.5625rem 3.75rem 1.5625rem 1.5rem;
-    border-radius: 36px
+    border-radius: 36px;
+        transition: all 0.4s 
+ease;
+    overflow: hidden;
 }
-
+.faq-arrow {
+    background: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s 
+ease;
+}
+.resources-item-wrapper:hover .faq-arrow {
+    transform: rotate(45deg);
+}
 .link {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 1.5rem;
     padding-inline:1.5rem 3.125rem;font-weight: 600;
     font-size: 1.125rem;
     line-height: 1.2;
     background-color: #f5f5f5
 }
-
+/* 
 .link:after {
     content: "";
     position: absolute;
@@ -1664,9 +1678,9 @@ h2 {
     right: 1.5rem;
     width: 1.5rem;
     height: 1.5rem;
-    background: url("../img/top-right.webp") 50% 50% no-repeat;
+    background: url("../img/top-right.png") 50% 50% no-repeat;
     transition: .3s
-}
+} */
 
 .description {
     font-size: 18px;
@@ -1887,6 +1901,10 @@ h2 {
     padding: 0 var(--offset-side)
 }
 
+.jeywalogo img{
+    max-width: 200px !important;
+    object-fit: cover;
+}
 .footer__main {
     display: flex;
     flex-direction: column;
