@@ -11,6 +11,25 @@
     <title>ИКСК</title>
 </head>
 <body>
+    <!-- Modal -->
+<div class="modal fade" id="modalform" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">ООО ИК "СК"</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+    <input type="text" placeholder="Ваше имя" />
+    <input type="tel" placeholder="Номер телефона" />
+    <input type="email" placeholder="Почта" />
+    <textarea rows="4" placeholder="Сообщение"></textarea>
+    <button class="btn btn-default" type="submit">Отправить</button>
+</div>
+    </div>
+  </div>
+</div>
+
     <div class="wrapper">
             <div id="main-div">
                 <div id="main-button" class="wave">
@@ -32,7 +51,7 @@
                 </svg>
                 
                 </div>
-                <a  href="" id="wrapperdown" class="onlineregistration">
+                <a data-bs-toggle="modal" data-bs-target="#modalform" href="" id="wrapperdown" class="onlineregistration">
                     Консультация
                 </a>
                 <a class="wrappericon" id="wrapperwp" href="" target="_blank">
@@ -73,11 +92,11 @@
                <img class="h_logo" src="/assests/img/logo.webp" alt="R-Finance logo"  loading="eager">
                </a>
                <ul class="top_menu">
-                  <li><a href="">Услуги</a></li>
-                  <li><a href="">Преимущества</a></li>
-                  <li><a href="">О компании</a></li>
-                  <li><a href="">Faq</a></li>
-                  <li><a href="">Контакты</a></li>
+                <li><a href="#about">О компании</a></li>
+                  <li><a href="#services">Услуги</a></li>
+                  <li><a href="#advantages">Преимущества</a></li> 
+                  <li><a href="#faq">Faq</a></li>
+                  <li><a href="#contact_sec">Контакты</a></li>
                </ul>
                <div class="top_menu_right">
                   <div class=" h_social_links h_social_gap">
@@ -115,7 +134,7 @@
                      <svg
                       xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 513.64 513.64" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m499.66 376.96-71.68-71.68c-25.6-25.6-69.12-15.359-79.36 17.92-7.68 23.041-33.28 35.841-56.32 30.72-51.2-12.8-120.32-79.36-133.12-133.12-7.68-23.041 7.68-48.641 30.72-56.32 33.28-10.24 43.52-53.76 17.92-79.36l-71.68-71.68c-20.48-17.92-51.2-17.92-69.12 0L18.38 62.08c-48.64 51.2 5.12 186.88 125.44 307.2s256 176.641 307.2 125.44l48.64-48.64c17.921-20.48 17.921-51.2 0-69.12z" fill="#000000" opacity="1" data-original="#000000"></path></g>
                     </svg>
-                     8 700 836 97 20
+                     8 961 370-00-06
                   </a>
                </div>
                <div id="open_menu">
@@ -126,10 +145,11 @@
                   </svg>
                </div>
                <ul id="mobile_menu">
-                  <li><a href="">Lorem</a></li>
-                  <li><a href="">Lorem</a></li>
-                  <li><a href="">Lorem</a></li>
-                  <li><a href="">Lorem</a></li>
+                  <li><a href="#about">О компании</a></li>
+                  <li><a href="#services">Услуги</a></li>
+                  <li><a href="#advantages">Преимущества</a></li> 
+                  <li><a href="#faq">Faq</a></li>
+                  <li><a href="#contact_sec">Контакты</a></li>
                </ul>
             </div>
          </nav>
@@ -161,7 +181,7 @@
 
                         <div class="hero-btns">
                             <a href="#" class="btn btn-default">Стоимость услуг</a>
-                            <a href="#" class="btn btn-white btn-default2">Оставить заявку</a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalform" class="btn btn-white btn-default2">Оставить заявку</a>
                         </div>
                     </div>
 
@@ -191,7 +211,7 @@
 
                         <div class="hero-btns">
                             <a href="#" class="btn btn-default">Стоимость услуг</a>
-                            <a href="#" class="btn btn-white btn-default2">Оставить заявку</a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalform"  class="btn btn-white btn-default2">Оставить заявку</a>
                         </div>
                     </div>
 
@@ -220,7 +240,7 @@
 
                         <div class="hero-btns">
                             <a href="#" class="btn btn-default">Стоимость услуг</a>
-                            <a href="#" class="btn btn-white btn-default2">Оставить заявку</a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalform"  class="btn btn-white btn-default2">Оставить заявку</a>
                         </div>
                     </div>
 
@@ -250,7 +270,7 @@
 
                         <div class="hero-btns">
                             <a href="#" class="btn btn-default">Стоимость услуг</a>
-                            <a href="#" class="btn btn-white btn-default2">Оставить заявку</a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalform"  class="btn btn-white btn-default2">Оставить заявку</a>
                         </div>
                     </div>
 
@@ -280,7 +300,7 @@
 
                         <div class="hero-btns">
                             <a href="#" class="btn btn-default">Стоимость услуг</a>
-                            <a href="#" class="btn btn-white btn-default2">Оставить заявку</a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalform"  class="btn btn-white btn-default2">Оставить заявку</a>
                         </div>
                     </div>
 
@@ -336,7 +356,7 @@
 качества.
                         </div>
                              <div data-aos="fade-up" class="about-info-buttons aos-init aos-animate">
-                                <a href="" class="btn-default">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#modalform"  class="btn-default">
                                     <span>Оставить заявку</span>
                                 </a> 
                             </div>
@@ -386,7 +406,7 @@
             </div>
         </div>
     </section>
- <section class="services_section" aria-label="Список юридических услуг">
+ <section class="services_section" id="services" aria-label="Список юридических услуг">
     <div id="bxdynamic_jmonnO_start" style="display:none"></div>
 
     <div class="container">
@@ -586,7 +606,7 @@
 <section class="info">
     <div class="container">
         <div class="info-texts">
-            <h2>Lorem ipsum dolor sit.</h2>
+            <h2>Геодезическое сопровождение строительства под ключ</h2>
             <p>
                 Геодезическое сопровождение строительства
 предполагает создание на строительной площадке
@@ -612,7 +632,7 @@
     </div>
 </section>
 
-<section class="advantages">
+<section class="advantages" id="advantages">
     <div class="container">
         <h2 class="section-title">ПОЧЕМУ ООО ИК «СТРОИТЕЛЬНЫЙ КОНСАЛТИНГ» ?</h2>
         <div class="advantages-cards">
@@ -711,113 +731,192 @@
                               Если не нашли нужную информацию — свяжитесь с нами, и мы подробно проконсультируем вас.
                            </p>
                         </div>
-                        <a class="btn btn-default-yellow">Оставить заявку</a>
+                        <a data-bs-toggle="modal" data-bs-target="#modalform"  class="btn btn-default-yellow">Оставить заявку</a>
                      </div>
                   </div>
                   <div class="f66">
-                     <div class="resources-items">
-                        <div class="resources-item-wrapper">
-                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Оставляете ли вы автомобиль у себя или можно продолжать ездить?
-                            <span class="faq-arrow" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"></path>
-            </svg>
-        </span>
-                           </a>
-                           <div class="description faq-hidden">Автомобиль остаётся у вас — вы продолжаете пользоваться им как обычно.</div>
-                        </div>
-                        <div class="resources-item-wrapper">
-                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Какие документы нужны для оформления займа?
-                            <span class="faq-arrow" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"></path>
-            </svg>
-        </span>
-                           </a>
-                           <div class="description faq-hidden">Паспорт и ПТС. По желанию — СТС. Больше ничего не требуется.</div>
-                        </div>
-                        <div class="resources-item-wrapper">
-                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Как быстро я получу деньги?
-                            <span class="faq-arrow" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"></path>
-            </svg>
-        </span>
-                           </a>
+                   <div class="faq-right">
+    <div class="faq-item active">
+        <div class="faq-header">
+            <h3>Что включает в себя независимый строительный контроль?</h3>
+            <span class="faq-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24">
+                    <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+            </span>
+        </div>
+        <div class="faq-content">
+            <p>
+                Контроль включает проверку качества работ, соблюдение технологий, сроков, бюджета,
+                соответствия нормативам и предотвращение ошибок на всех этапах строительства.
+            </p>
+        </div>
+    </div>
 
-                           <div class="description faq-hidden">Одобрение за 10–15 минут. Деньги выдаём в день подачи заявки.</div>
-                        </div>
-                        <div class="resources-item-wrapper">
-                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Какую сумму можно получить под залог авто?
-                            <span class="faq-arrow" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"></path>
-            </svg>
-        </span>
-                           </a>
-                           <div class="description faq-hidden">До 90% от рыночной стоимости автомобиля, в зависимости от марки и технического состояния.</div>
-                        </div>
-                        <div class="resources-item-wrapper">
-                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Какие у вас процентные ставки?
-                            <span class="faq-arrow" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"></path>
-            </svg>
-        </span>
-                           </a>
-                           <div class="description faq-hidden">Ставка фиксированная и прописана в договоре. Никаких скрытых платежей или комиссий.</div>
-                        </div>
-                        <div class="resources-item-wrapper">
-                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Можно ли погашать кредит досрочно?
-                            <span class="faq-arrow" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"></path>
-            </svg>
-        </span>
-                           </a>
-                           <div class="description faq-hidden">Да, в любое время и без дополнительных штрафов.</div>
-                        </div>
-                        <div class="resources-item-wrapper">
-                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Работаете ли вы с автомобилями, которые ещё находятся в кредите?
-                            <span class="faq-arrow" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"></path>
-            </svg>
-        </span>
-                           </a>
-                           <div class="description faq-hidden">Да, возможно оформление и с кредитными автомобилями — условия обсуждаются индивидуально.</div>
-                        </div>
-                        <div class="resources-item-wrapper">
-                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Проверяете ли вы кредитную историю клиента?
-                            <span class="faq-arrow" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"></path>
-            </svg>
-        </span>
-                           </a>
-                           <div class="description faq-hidden">Нет, кредитная история не влияет на одобрение.</div>
-                        </div>
-                        <div class="resources-item-wrapper">
-                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Что происходит, если я задержу платеж?
-                            <span class="faq-arrow" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"></path>
-            </svg>
-        </span>
-                           </a>
-                           <div class="description faq-hidden">Вы заранее получаете напоминания. Условия просрочки прозрачны и указаны в договоре.</div>
-                        </div>
-                        <div class="resources-item-wrapper">
-                           <a href="#" class="resources-item link link-hover-red" aria-label="faq">Можно ли оформить сделку дистанционно
-                            ?
-                        <span class="faq-arrow" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"></path>
-            </svg>
-        </span></a>
-                           <div class="description faq-hidden">Да, предварительную оценку и консультацию проводим по телефону или онлайн.</div>
-                        </div>
-                     </div>
+    <div class="faq-item">
+        <div class="faq-header">
+            <h3>На каких объектах выполняется строительный контроль?</h3>
+            <span class="faq-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24">
+                    <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+            </span>
+        </div>
+        <div class="faq-content">
+            <p>
+                Мы работаем с жилыми и коммерческими зданиями, промышленными объектами,
+                инфраструктурой, энергетическими комплексами и ветровыми электростанциями.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-header">
+            <h3>Что включает услуга геодезического сопровождения строительства?</h3>
+            <span class="faq-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24">
+                    <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+            </span>
+        </div>
+        <div class="faq-content">
+            <p>
+                Создание геодезического подразделения на объекте, разбивка осей, исполнительные съемки,
+                контроль геометрии конструкций и постоянная поддержка заказчика.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-header">
+            <h3>Сколько специалистов может включать геодезическое подразделение?</h3>
+            <span class="faq-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24">
+                    <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+            </span>
+        </div>
+        <div class="faq-content">
+            <p>
+                Мы формируем подразделения любых масштабов — от одного геодезиста до нескольких
+                квалифицированных бригад со всем необходимым оборудованием.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-header">
+            <h3>Как определяется график геодезических работ?</h3>
+            <span class="faq-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24">
+                    <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+            </span>
+        </div>
+        <div class="faq-content">
+            <p>
+                График составляется совместно с заказчиком с учётом сроков строительства,
+                технологических этапов и особенностей конкретного проекта.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-header">
+            <h3>Когда требуется восстановление исполнительной документации?</h3>
+            <span class="faq-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24">
+                    <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+            </span>
+        </div>
+        <div class="faq-content">
+            <p>
+                При утрате документов, нехватке квалификации подрядчика,
+                дефиците ресурсов или необходимости привести документацию к нормативным требованиям.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-header">
+            <h3>Для чего проводится входной контроль материалов?</h3>
+            <span class="faq-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24">
+                    <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+            </span>
+        </div>
+        <div class="faq-content">
+            <p>
+                Чтобы исключить использование некачественных материалов, выявить несоответствия и
+                гарантировать безопасность и надёжность строительства.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-header">
+            <h3>Что включает процедура входного контроля?</h3>
+            <span class="faq-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24">
+                    <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+            </span>
+        </div>
+        <div class="faq-content">
+            <p>
+                Визуальный осмотр, измерение параметров, проверка сертификатов, документов и сравнение
+                характеристик с проектными требованиями.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-header">
+            <h3>Что такое маркшейдерская съёмка и зачем она нужна?</h3>
+            <span class="faq-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24">
+                    <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+            </span>
+        </div>
+        <div class="faq-content">
+            <p>
+                Это точное определение положения и высотных отметок на объекте. Оно обеспечивает
+                корректное планирование строительства и контроль монтажа конструкций.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-header">
+            <h3>Что даёт геодезический мониторинг зданий и сооружений?</h3>
+            <span class="faq-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24">
+                    <path stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+            </span>
+        </div>
+        <div class="faq-content">
+            <p>
+                Мониторинг выявляет деформации, изменения геометрии и возможные риски,
+                позволяя предотвратить аварийные ситуации и повысить безопасность объекта.
+            </p>
+        </div>
+    </div>
+</div>
+
                   </div>
                </div>
             </div>
@@ -865,16 +964,16 @@
                                     <path d="m499.66 376.96-71.68-71.68c-25.6-25.6-69.12-15.359-79.36 17.92-7.68 23.041-33.28 35.841-56.32 30.72-51.2-12.8-120.32-79.36-133.12-133.12-7.68-23.041 7.68-48.641 30.72-56.32 33.28-10.24 43.52-53.76 17.92-79.36l-71.68-71.68c-20.48-17.92-51.2-17.92-69.12 0L18.38 62.08c-48.64 51.2 5.12 186.88 125.44 307.2s256 176.641 307.2 125.44l48.64-48.64c17.921-20.48 17.921-51.2 0-69.12z" fill="#000000" opacity="1" data-original="#000000" class=""></path>
                                  </g>
                               </svg>
-                              8 700 836 97 20
+                              8 961 370-00-06
                            </a>
                         </div>
                         <div>
                            <p class="formLTitle">E-mail</p>
-                           <a href="mailto:office@r-finance.kz" target="_blank">office@r-finance.kz</a>
+                           <a href="mailto:IK-SC.direct@ik-sk.ru" target="_blank"> IK-SC.direct@ik-sk.ru</a>
                         </div>
                      </div>
                      <p class="formLTitle">Связаться в WhatsApp</p>
-                     <a href="https://wa.me/77008369720" target="_blank">+7 700 836 97 20</a>
+                     <a href="https://wa.me/77008369720" target="_blank">+7 961 370-00-06</a>
                      <p class="text-b fw-23 mt-4">Наши специалисты готовы проконсультировать вас в любое время.</p>
                   </div>
                   <div class="formWrapperRight">
@@ -911,9 +1010,9 @@
             Бизнес Центр «Парк Победы»        </div>
         <div class="footer__contacts">
           <div class="footer__phone">
-            <a href="" title="Телефон компании" rel="nofollow">+7 (xxx) xxx-xx-xx</a>          </div>
+            <a href="" title="Телефон компании" rel="nofollow">+7 (961) 370-00-06</a>          </div>
           <div class="footer__email">
-            <a href="" rel="nofollow" title="">info@aqros.ru</a>          </div>
+            <a href="" rel="nofollow" title=""> IK-SC.direct@ik-sk.ru</a>          </div>
         </div>
       </div>
       <div class="footer__nav">
@@ -921,33 +1020,33 @@
     <a href="" class="footer-nav__title" title="">Компания</a>
         <ul class="footer-nav__list">
           <li class="footer-nav__item">
-        <a class="footer-nav__link" href="/about" title="">О компании</a>
+        <a class="footer-nav__link" href="#about" title="">О компании</a>
+      </li>
+      <li class="footer-nav__item">
+        <a class="footer-nav__link" href="#services" title="">Услуги </a>
       </li>
           <li class="footer-nav__item">
-        <a class="footer-nav__link" href="/team" title="">Наша команда </a>
+        <a class="footer-nav__link" href="#advantages" title="">Преимущества </a>
       </li>
           <li class="footer-nav__item">
-        <a class="footer-nav__link" href="/services" title="">Услуги </a>
+        <a class="footer-nav__link" href="#faq" title="">FAQ </a>
       </li>
           <li class="footer-nav__item">
-        <a class="footer-nav__link" href="/contact" title="">Контакты</a>
+        <a class="footer-nav__link" href="#contact_sec" title="">Контакты</a>
       </li>
         </ul>
       </div>
 	  <div class="footer-nav__group">
-    <a href="" class="footer-nav__title" title="">Навигация</a>
+    <a href="" class="footer-nav__title" title="">Документы</a>
         <ul class="footer-nav__list">
           <li class="footer-nav__item">
-        <a class="footer-nav__link" href="/reviews" title="">Отзывы клиентов</a>
+        <a class="footer-nav__link" href="/reviews" title="">Документ 1</a>
       </li>
           <li class="footer-nav__item">
-        <a class="footer-nav__link" href="/cases" title="">Примеры дел</a>
+        <a class="footer-nav__link" href="/cases" title="">Документ 2</a>
       </li>
           <li class="footer-nav__item">
-        <a class="footer-nav__link" href="/events" title="">Мероприятия</a>
-      </li>
-          <li class="footer-nav__item">
-        <a class="footer-nav__link" href="/blogs" title="">Блоги</a>
+        <a class="footer-nav__link" href="/events" title="">Документы 3</a>
       </li>
         </ul>
       </div>
@@ -997,17 +1096,21 @@
     </script>
     <!--Faq Script-->
     <script>
-        document.querySelectorAll(".resources-item-wrapper").forEach(wrapper => {
-    wrapper.addEventListener("click", function (e) {
+   document.addEventListener("DOMContentLoaded", () => {
+  const faqItems = document.querySelectorAll(".faq-item");
 
-        e.preventDefault();
+  faqItems.forEach((item) => {
+    const header = item.querySelector(".faq-header");
 
-        const desc = this.querySelector(".description");
-        const link = this.querySelector(".link");
-        desc.classList.toggle("faq-hidden");
-
-        link.classList.toggle("open");
+    header.addEventListener("click", () => {
+      if (item.classList.contains("active")) {
+        item.classList.remove("active");
+      } else {
+        faqItems.forEach((i) => i.classList.remove("active"));
+        item.classList.add("active");
+      }
     });
+  });
 });
 
     </script>
@@ -1017,7 +1120,7 @@
     let center = [55.83528445984077, 37.12140963897122];
     let map = new ymaps.Map("map", {
       center: center,
-      zoom: 15,
+      zoom: 18,
     });
 
     let placemark = new ymaps.Placemark(
