@@ -611,7 +611,7 @@ header {
 }
 
 .btn-default:hover {
-  color: var(--green);
+  color: #333;
   background-color: #fff
 }
 
@@ -1025,7 +1025,8 @@ header {
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+        justify-content: flex-start;
+    min-height: 170px;
 }
 
 #about .about-benefits .about-benefits-item .about-benefits-item-wrap .about-svgicon {
@@ -1966,10 +1967,6 @@ h2 {
 #callFormWrapper button,#callFormWrapper textarea {
     width: 100%;
     padding: 10px
-}
-
-#callFormWrapper .btn-default-yellow{
-    color: #333
 }
 
 #callFormWrapper input:focus,#callFormWrapper textarea:focus {
