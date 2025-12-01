@@ -1998,6 +1998,8 @@ h2 {
         font-size: 15px;
     }
 
+    #about .about-video img {
+            width: 100%;}
     #about .about-img-text {
         left: -20px;
         padding: 10px
@@ -2150,6 +2152,8 @@ h2 {
     .footer__text{
         font-size: 15px;
     }
+    #about .about-video img {
+            width: 100%;}
 }
 
 
@@ -2227,15 +2231,15 @@ gap: 20px;}
         font-size: 11px !important;
     }
         .hero-title {
-        font-size: 30px;
+        font-size: 40px;
         margin-bottom: 20px;
-        width: 100%;
+        width: 98%;
     }
     .hero-tag {
         font-size: 13px;
     }
         .hero-subtext {
-        font-size: 11px;
+        font-size: 12px;
     }
     .hero-btns {
     display: flex;
@@ -2275,7 +2279,7 @@ gap: 20px;}
 
     }
     .info-texts h2 {
-        font-size: 18px;
+        font-size: 17px;
     }
         .info-texts p {
         padding-top: 0;
@@ -2309,6 +2313,19 @@ gap: 20px;}
     .h_logo{
         width: 80px;
     }
+    #about .about-info{
+        padding: 0;
+    }
+    #about .about-img{
+        display: flex;
+        justify-content: center;
+    }
+    #about .about-img-text{
+        left: 17px;
+    }
+        #about .about-video img {
+            width: 100%;}
+
 }
 
 @media only screen and (min-width: 992px) {
